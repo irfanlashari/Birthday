@@ -23,7 +23,7 @@ export function Footer() {
         {/* Main Message */}
         <div className="mb-6">
           <p className="font-script text-xl sm:text-2xl text-[#2D2D2D] mb-2">
-            Made with love for my best friend
+            Made by my love
           </p>
           <div className="flex items-center justify-center gap-2 text-[#6B6B6B]">
             <span>Crafted with</span>
@@ -37,7 +37,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="text-[#6B6B6B] text-sm">
-          {currentYear} - Happy Birthday Celebration
+          04 Aprail - Happy Birthday Celebration
         </p>
       </div>
     </footer>
