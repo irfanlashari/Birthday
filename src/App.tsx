@@ -11,7 +11,17 @@ import { useYouTubeAudio } from '@/hooks/useYouTubeAudio';
 
 // YouTube video ID for birthday song
 const BIRTHDAY_VIDEO_ID = 'nAw2ooeubSQ';
+import { HeartTrail } from '@/components/HeartTrail';
 
+function App() {
+  return (
+    <div className="min-h-screen bg-[#FFF8F0]">
+      <HeartTrail /> {/* Add this line */}
+      
+      {/* Rest of your content */}
+    </div>
+  );
+}
 function App() {
   const [showPlayer, setShowPlayer] = useState(false);
   const { isPlaying, toggle, onReady, onStateChange, opts } = useYouTubeAudio(BIRTHDAY_VIDEO_ID);
