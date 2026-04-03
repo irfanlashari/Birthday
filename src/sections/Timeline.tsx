@@ -28,28 +28,28 @@ const memories: Memory[] = [
   {
     id: 1,
     title: 'The Day We Met',
-    description: 'From strangers to best friends, that very first conversation changed everything. Who knew we would become inseparable?',
+    description: 'That first time we stepped into something new together… full of laughs, little moments, and memories I’ll never forget.',
     image: '/memory1.png', // REPLACE: Add your "first meeting" photo here
     icon: <Heart className="w-5 h-5" />,
   },
   {
     id: 2,
     title: 'Our First Adventure',
-    description: 'Remember that spontaneous trip we took? The laughter, the memories, and the stories we created together.',
+    description: 'From the RAG Workshop to everything that followed… I didn’t just enjoy those moments, I fell in love with our time together.',
     image: '/memory2.png', // REPLACE: Add your adventure photo here
     icon: <Star className="w-5 h-5" />,
   },
   {
     id: 3,
     title: 'Things I Admire About You',
-    description: 'Your kindness, your strength, your sense of humor, and the way you always know how to make me smile.',
+    description: 'Your kindness and strength, the way your hijab reflects your beauty, your unseen eyes that still say so much, your smile… and most of all, how deeply you care about me.',
     image: '/memory3.png', // REPLACE: Add a meaningful photo here
     icon: <Sparkles className="w-5 h-5" />,
   },
   {
     id: 4,
     title: 'Our Inside Jokes',
-    description: 'Those moments that only we understand, the laughter that never ends, and the bond that grows stronger every day.',
+    description: 'The moments only we get, the laughter that never really fades, and the way even the smallest jokes make our bond stronger.',
     image: '/memory4.png', // REPLACE: Add a fun/candid photo here
     icon: <Gift className="w-5 h-5" />,
   },
