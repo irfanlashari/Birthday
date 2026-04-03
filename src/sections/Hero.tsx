@@ -80,7 +80,7 @@ export function Hero({ isPlaying, onToggleMusic }: HeroProps) {
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          Happy Birthday!
+          Happy Birthday Wania!
         </h1>
 
         {/* Subtitle */}
@@ -89,7 +89,7 @@ export function Hero({ isPlaying, onToggleMusic }: HeroProps) {
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          To my amazing best friend
+          To my Dear Wania
         </p>
 
         {/* Decorative Line */}
