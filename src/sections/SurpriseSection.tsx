@@ -95,7 +95,7 @@ export function SurpriseSection() {
 
               {/* Card Title */}
               <h3 className="font-script text-2xl sm:text-3xl text-[#2D2D2D] mb-6">
-                To My Dearest Best Friend
+                To My Dearest ____________ (there is no words that decribe)
               </h3>
 
               {/* Message Content - More Impressive */}
