@@ -149,10 +149,10 @@ export function SurpriseSection() {
               {/* Closing */}
               <div className="mt-8 pt-6 border-t border-[#F8C8DC]/50 text-center">
                 <p className="font-script text-2xl sm:text-3xl text-[#F8C8DC] mb-2">
-                  Happy Birthday, My Dear Friend!
+                  Happy Birthday, My Dear Crush!
                 </p>
                 <p className="text-[#6B6B6B] text-sm">
-                  With all my love and appreciation
+                  With all my love.....
                 </p>
                 <div className="flex justify-center gap-1 mt-3">
                   <Heart className="w-4 h-4 text-[#F8C8DC] fill-[#F8C8DC]" />
