@@ -19,30 +19,26 @@ export function HeartTrail() {
     let timeoutId: NodeJS.Timeout;
     
     const handleMouseMove = (e: MouseEvent) => {
-      // Throttle heart creation (avoid too many hearts)
       if (timeoutId) return;
       
       timeoutId = setTimeout(() => {
-        // Only create heart if mouse moved enough
         const dx = Math.abs(e.clientX - lastX);
         const dy = Math.abs(e.clientY - lastY);
         
         if (dx > 15 || dy > 15 || hearts.length === 0) {
-          // Create new heart
           const newHeart: Heart = {
             id: heartId++,
             x: e.clientX,
             y: e.clientY,
-            size: Math.random() * 20 + 16, // Random size between 16-36px
-            opacity: Math.random() * 0.5 + 0.5, // Random opacity between 0.5-1
-            rotation: Math.random() * 360, // Random rotation
+            size: Math.random() * 20 + 16,
+            opacity: Math.random() * 0.5 + 0.5,
+            rotation: Math.random() * 360,
           };
           
           setHearts(prev => [...prev, newHeart]);
           lastX = e.clientX;
           lastY = e.clientY;
           
-          // Remove heart after animation
           setTimeout(() => {
             setHearts(prev => prev.filter(heart => heart.id !== newHeart.id));
           }, 800);
@@ -64,7 +60,6 @@ export function HeartTrail() {
 
   return (
     <>
-      {/* Hide default cursor on desktop */}
       <style>{`
         @media (min-width: 768px) {
           * {
@@ -73,7 +68,6 @@ export function HeartTrail() {
         }
       `}</style>
       
-      {/* Floating hearts trail */}
       {hearts.map(heart => (
         <div
           key={heart.id}
@@ -102,13 +96,11 @@ export function HeartTrail() {
         </div>
       ))}
       
-      {/* Custom heart cursor */}
       <HeartCursor />
     </>
   );
 }
 
-// Component for the main cursor
 function HeartCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -170,7 +162,6 @@ function HeartCursor() {
           )}
         </svg>
         
-        {/* Pulsing effect */}
         <div className="absolute inset-0 -m-2 rounded-full bg-pink-400 opacity-20 animate-ping" />
       </div>
     </div>
